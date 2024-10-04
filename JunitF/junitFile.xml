@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="95.739473">
+    <testcase classname="To validate Login functionality of Facebook application" name="To validate invalide usename and valide password" time="17.674989">
+        <system-out>
+            <![CDATA[Given To launch the chrome browser and hit the url..........................passed
+When To enter the invalide username in emailfield...........................passed
+And To enter the valide password in password field..........................passed
+And To click the login button...............................................passed
+Then To close chrome browser................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="To validate Login functionality of Facebook application" name="To validate valide usename and invalide password" time="18.019246">
+        <system-out>
+            <![CDATA[Given To launch the chrome browser and hit the url..........................passed
+When enter the invalide username "12345@gmail.com" in emailfield............passed
+And enter the valide password "12345" in password field.....................passed
+And click the login button..................................................passed
+Then close chrome browser...................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="To validate Login functionality of Facebook application" name="To validate valide usename and invalide password 2" time="36.014475">
+        <system-out>
+            <![CDATA[Given To launch the chrome browser and hit the url..........................passed
+When enter the invalide username "cucumber@gmail.com" in emailfield.........passed
+And enter the valide password "cucumber" in password field..................passed
+And click the login button..................................................passed
+Then close chrome browser...................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="To validate Login functionality of Facebook application" name="To validate valide usename and invalide password 3" time="14.589249">
+        <system-out>
+            <![CDATA[Given To launch the chrome browser and hit the url..........................passed
+When enter the invalide username "sql123@gmail.com" in emailfield...........passed
+And enter the valide password "sql" in password field.......................passed
+And click the login button..................................................passed
+Then close chrome browser...................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="To validate SignIn functionality of Amazon application" name="To validate valide username and valies paessword" time="9.441514">
+        <failure message="org.junit.ComparisonFailure: expected:&lt;[12345]&gt; but was:&lt;[sathya]&gt;&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:115)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:144)&#13;&#10;&#9;at org.stepdefinition.AmazonSignInDefine.to_send_the_password_in_password_field(AmazonSignInDefine.java:40)&#13;&#10;&#9;at ✽.To send the password in password field(src/test/resources/Feature/02amazon.feature:10)&#13;&#10;">
+            <![CDATA[Given Launch the chrome browser and hit the amazon url......................passed
+When To send the username or mobile number in enmaild field.................passed
+And To click continue button................................................passed
+And To send the password in password field..................................failed
+And To click the sign in button.............................................skipped
+Then To close the amazon page browser.......................................skipped
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<[12345]> but was:<[sathya]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at org.stepdefinition.AmazonSignInDefine.to_send_the_password_in_password_field(AmazonSignInDefine.java:40)
+	at ✽.To send the password in password field(src/test/resources/Feature/02amazon.feature:10)
+]]>
+        </failure>
+    </testcase>
+</testsuite>
